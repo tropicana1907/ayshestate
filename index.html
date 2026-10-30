@@ -43,14 +43,7 @@
 
   /* hero */
   .hero{padding:70px 0 0;border:0;overflow:hidden}
-  .hero-top{display:grid;grid-template-columns:260px 1fr;gap:56px;align-items:end}
-  .card-me{border:1px solid var(--line);background:var(--card);padding:12px;border-radius:6px}
-  .card-me .ph{aspect-ratio:4/5;display:flex;align-items:center;justify-content:center;background:linear-gradient(160deg,#241f17,#100e0b);border-radius:4px;position:relative}
-  .card-me .ph:before{content:"";position:absolute;inset:12px;border:1px solid rgba(201,169,106,.3)}
-  .card-me .ph span{font-family:var(--serif);font-size:84px;color:var(--gold)}
-  .card-me .nm{display:flex;justify-content:space-between;align-items:center;padding:12px 4px 2px}
-  .card-me .nm b{font-family:var(--serif);font-weight:400;font-size:16px;display:block}
-  .card-me .nm small{color:var(--muted);font-size:11px}
+  .hero-top{max-width:900px}
   .hero h1{font-size:clamp(34px,4.6vw,58px);margin:14px 0 22px}
   .hero .lead{margin-bottom:30px}
   .actions{display:flex;gap:12px;flex-wrap:wrap;align-items:center}
@@ -143,7 +136,7 @@
     .nav ul{display:none}
     .hero-top,.about,.contact,.head{grid-template-columns:1fr;gap:40px}
     .head .lead{justify-self:start}
-    .card-me{max-width:240px}
+
     .stats{grid-template-columns:repeat(2,1fr)}
     .services,.steps{grid-template-columns:1fr}
     .formats{grid-template-columns:1fr 1fr}
@@ -184,10 +177,6 @@
 <section class="hero">
   <div class="wrap">
     <div class="hero-top">
-      <div class="card-me">
-        <div class="ph"><span>ЕМ</span></div>
-        <div class="nm"><div><b data-name>Екатерина Михайлова</b><small>Руководитель отдела продаж</small></div></div>
-      </div>
       <div>
         <div class="idx">Упаковка отдела продаж застройщика</div>
         <h1>Отдел продаж, который продаёт <em>системно</em> — а не держится на одном сильном менеджере</h1>
