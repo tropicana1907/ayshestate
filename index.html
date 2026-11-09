@@ -180,6 +180,17 @@
     .nav .btn{display:none}
   }
 .company-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.company-grid .sch .nm{font-size:clamp(22px,3vw,30px)}.company-grid .sch{padding:24px 20px}
+
+  .case-story{display:grid;grid-template-columns:1fr 1fr;gap:60px;padding:35px 0 46px;border-top:1px solid var(--line)}
+  .case-story h3,.work-heading h3{font-size:clamp(25px,3vw,38px);margin:14px 0 18px}
+  .case-story p,.work-heading p{color:var(--muted);font-size:16px;line-height:1.7}.case-story p+p{margin-top:14px}
+  .case-numbers{display:grid;grid-template-columns:repeat(3,1fr);border:1px solid var(--line)}
+  .case-numbers>div{padding:28px;border-right:1px solid var(--line)}.case-numbers>div:last-child{border:0}
+  .case-numbers strong{display:block;color:var(--gold);font:400 clamp(30px,4vw,52px)/1.1 var(--serif)}.case-numbers span{display:block;color:var(--muted);margin-top:10px;font-size:14px}
+  .work-heading{margin:70px 0 25px}.work-heading h3{margin-bottom:8px}.floor-gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+  .floor-gallery figure{margin:0;background:#eee9e1}.floor-gallery img{display:block;width:100%;aspect-ratio:1 / 1;object-fit:contain;background:#f7f5f0}.floor-gallery figcaption{padding:12px 15px;color:#514b40;font-size:13px;font-weight:500}
+  .case-link{margin-top:25px}.case-link a{color:var(--gold2);text-decoration:underline;text-underline-offset:5px}
+  @media(max-width:700px){.case-story{grid-template-columns:1fr;gap:30px}.case-numbers>div{padding:16px 10px}.case-numbers strong{font-size:28px}.case-numbers span{font-size:11px;line-height:1.4}.floor-gallery{grid-template-columns:repeat(2,1fr);gap:10px}.floor-gallery figure:last-child{grid-column:1 / -1}.floor-gallery figure:last-child img{aspect-ratio:2 / 1}.work-heading{margin-top:50px}}
 </style>
 </head>
 <body>
@@ -229,7 +240,21 @@
 <div class="sch"><div class="nm">Sminex</div></div><div class="sch"><div class="nm">MR Group</div></div><div class="sch"><div class="nm">Этажи</div></div><div class="sch"><div class="nm">IWEL</div></div>
 </div></div></section>
 
-<section id="cases"><div class="wrap"><div class="head"><div><div class="idx">Кейс</div><h2>Цифровая витрина четырёх проектов <em>девелопера IWEL</em></h2></div></div><div class="cases"><div class="case"><div class="idx">01</div><div><div class="lbl">Задача</div><h3>Ускорить работу с клиентами и сохранить каждое обращение</h3><p>Собственнику было важно видеть обращения и сократить время подготовки предложений. Для этого менеджерам требовался быстрый доступ к информации о четырёх проектах.</p></div><div><div class="lbl">Решение</div><p>Я создала цифровую витрину с планировками, условиями покупки, калькулятором рассрочки и возможностью подготовить коммерческое предложение. Для неё отрисованы 58 планировочных решений.</p><p style="margin-top:12px">Отдельно организован учёт обращений из подключённых каналов в CRM.</p><p style="margin-top:18px"><a href="https://iwel.ru/card" target="_blank" rel="noopener" style="color:var(--gold2);text-decoration:underline">Посмотреть витрину ↗</a></p></div><div class="big">58<small>планировочных решений</small></div></div></div></div></section>
+<section id="cases"><div class="wrap">
+  <div class="head"><div><div class="idx">Кейс · IWEL</div><h2>Как я создала инструменты <em>для продаж четырёх проектов</em></h2></div></div>
+  <div class="case-story">
+    <div><div class="lbl">Задача</div><h3>Сократить время подготовки предложения и навести порядок в обращениях</h3><p>Менеджерам нужна была информация по четырём проектам в одном месте, а руководителю — понятная картина работы с клиентами.</p></div>
+    <div><div class="lbl">Что я сделала</div><p>Лично создала с помощью Claude конструктор коммерческих предложений и отрисовала 58 планировок. В одном окне менеджер выбирает квартиру, готовит предложение и рассчитывает рассрочку.</p><p>Подключила ChatPlace и контролировала ответы команды. Менеджеры стали разбирать обращения и возражения в день их поступления.</p></div>
+  </div>
+  <div class="case-numbers"><div><strong>4</strong><span>проекта в одном конструкторе</span></div><div><strong>58</strong><span>планировок отрисовала лично</span></div><div><strong>1 день</strong><span>команда обрабатывает обращения и возражения</span></div></div>
+  <div class="work-heading"><div class="idx">Примеры работы</div><h3>Планировки, которые помогают увидеть квартиру</h3><p>Фрагмент библиотеки планировок проекта «Империал» в конструкторе IWEL.</p></div>
+  <div class="floor-gallery">
+    <figure><img src="https://tropicana1907.github.io/iWEL-Card-Builder/templates/floorplans/imperial-b5-f16-kv1-68.webp" alt="Планировка квартиры 68,65 м² в проекте Империал" loading="lazy"><figcaption>Империал · 68,65 м²</figcaption></figure>
+    <figure><img src="https://tropicana1907.github.io/iWEL-Card-Builder/templates/floorplans/imperial-b5-f16-kv2-82.webp" alt="Планировка квартиры 82,90 м² в проекте Империал" loading="lazy"><figcaption>Империал · 82,90 м²</figcaption></figure>
+    <figure><img src="https://tropicana1907.github.io/iWEL-Card-Builder/templates/floorplans/imperial-b5-f16-kv3-45.webp" alt="Планировка квартиры 45,70 м² в проекте Империал" loading="lazy"><figcaption>Империал · 45,70 м²</figcaption></figure>
+  </div>
+  <p class="case-link"><a href="https://iwel.ru/card" target="_blank" rel="noopener">Открыть конструктор IWEL ↗</a></p>
+</div></section>
 
 <section id="process"><div class="wrap"><div class="head"><div><div class="idx">Этапы работы</div><h2>Как я <em>работаю с проектом</em></h2></div></div><ul class="steps">
 <li><span class="n">01</span><h3>Стратегическая сессия</h3><p>Изучаю проект и работу отдела продаж. Обсуждаем с собственником цели, сложности и первоочередные задачи.</p></li>
